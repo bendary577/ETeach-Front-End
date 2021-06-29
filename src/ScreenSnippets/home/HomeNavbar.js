@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../../public/css/accnavbar.css";
 import egypt from "../../../public/icons/home/egypt.png";
-import logo from '../../../public/images/Home/myeasy-logo.png';
+import logo from '../../../public/images/Home/logo.png';
 
 class HomeNavbar extends Component {
     render() {
@@ -11,19 +11,19 @@ class HomeNavbar extends Component {
         };
 
         const logoStyle = {
-            width: 90,
-            height: 90,
+            width: 70,
+            height: 70,
             marginTop : 5
           };
 
         return (
 
-            <nav className="topnavigation navbar navbar-expand-sm bg-dark navbar-dark d-flex">
+            <nav className="topnavigation navbar navbar-expand-sm bg-light navbar-light d-flex">
                     <div className="">
                         {/*------------------------- brand logo ----------------------------------------------*/}
                         <a className="navbar-brand font-weight-bold" href="#">
                             <img src={logo} alt="Logo"  style={logoStyle}/>
-                            My Easy
+                            Eteach
                         </a>
                     </div>
                     <div className="ml-auto">
@@ -38,7 +38,7 @@ class HomeNavbar extends Component {
                         <div className="ml-5 collapse navbar-collapse accLinks" id="collapsibleNavbar">
                             <ul className="navbar-nav mr-3">
                                 <li className="nav-item mt-2">
-                                    <a className="nav-link" href="#services">services</a>
+                                    <a className="nav-link text-dark" href="#services">services</a>
                                 </li>
                                 <li className="nav-item mt-2">
                                     <a className="nav-link" href="/#about">about us</a>

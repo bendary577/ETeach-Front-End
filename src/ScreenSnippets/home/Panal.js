@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import money from "../../../public/images/Home/money.jpg";
+import money from "../../../public/images/Home/online-courses.jpg";
 
 class Panal extends Component {
     render() {

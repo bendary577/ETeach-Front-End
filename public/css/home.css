@@ -3,11 +3,11 @@ body{
 }
 
 .navbar .nav-link{
-  color: white !important;
+  color: black !important;
 }
 
 
-/* Welcome */
+/* Welcome 
 .welcome {
   height: 700px;
   background-image: url("../images/Home/online-shopping.jpg");
@@ -16,7 +16,7 @@ body{
   background-position: center;
   background-size: cover;
 }
-
+*/
 
 
 

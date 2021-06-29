@@ -8,7 +8,7 @@ import Panal from '../ScreenSnippets/home/Panal';
 import Footer from '../ScreenSnippets/accounts/Footer';
 import Offers from "../ScreenSnippets/home/Offers";
 import HomeNavbar from "../ScreenSnippets/home/HomeNavbar";
-
+import Testmonials from "../ScreenSnippets/home/Testmonials";
 
 class Home extends Component {
     render() {
@@ -20,6 +20,7 @@ class Home extends Component {
                 <Panal head="We Can Make Youe Rich" p="you can use your moeny to busniss it in useful work"
                     href="/store" a="Store" />
                 <About />
+                <Testmonials />
                 <hr />
                 <Offers />
                 <ContactUs />
