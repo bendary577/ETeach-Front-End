@@ -26,12 +26,11 @@ class BrowseCoursesSideNav extends Component {
         return (    
 
             <div class="bg-light border-right" id="sidebar-wrapper">
-                <div class="sidebar-heading">My Easy account </div>
+                <div class="sidebar-heading">Eteach account </div>
                 <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action bg-light">Orders number <strong className="text-success ml-3">0</strong></a>
                     <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
                     <div class="rating list-group-item-action  ">
-                        <p className="ml-3 mt-2">Stores Ratings</p>
+                        <p className="ml-3 mt-2">Course Ratings</p>
                         <ul class="items-list ml-3">
                             <li>
                                 <div class="clearfix">

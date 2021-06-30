@@ -22,12 +22,16 @@ class CoursesLibrary extends Component {
                         <div class="container-fluid">
 
                             <div className="mt-5">
+                                <div className="my-3">
+                                    <h4>Computer Science</h4>
+                                </div>
                                 <CoursesCarousel />
                             </div>
 
-
-
                             <div className="my-5">
+                            <div className="my-3">
+                                    <h4>Mathematics</h4>
+                                </div>
                                 <CoursesCarousel />
                             </div>
 

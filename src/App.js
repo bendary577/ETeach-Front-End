@@ -26,7 +26,7 @@ import Notifications from './Screens/Notifications';
 import ForgotPasswordConfirmation from './Screens/ForgotPasswordConfirmation';
 import './App.css';
 import UpdatePassword from './Screens/UpdatePassword';
-import StoreView from './Screens/StoreView';
+import CourseView from './Screens/CourseView';
 
 class App extends Component {
     render() {
@@ -142,7 +142,7 @@ class App extends Component {
                     </Route>
 
                     <Route exact path="/view_store">
-                        <StoreView />
+                        <CourseView />
                     </Route>
 
                 </Switch>
