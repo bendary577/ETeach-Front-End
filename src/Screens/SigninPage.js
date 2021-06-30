@@ -1,8 +1,6 @@
 
 import React, { Component } from "react";
-import SignInFrom from "../ScreenSnippets/authentication/SignInForm"
-import app6 from "../../public/images/Home/app6.png";
-
+import '../../public/css/signin.css';
 
 class SigninPage extends Component {
 
@@ -14,16 +12,35 @@ class SigninPage extends Component {
         };
 
         return (
-            <div className="">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xs-6 col-md-4 mt-5">
-                            <img src={app6} style={imageStyle} alt="" />
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center my-3">Sign In</h5>
+                        <form class="form-signin">
+                        <div class="form-label-group">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus />
+                            <label for="inputEmail">Email address</label>
                         </div>
-                        <div className="col-xs-6 col-md-8">
-                            <SignInFrom />
+
+                        <div class="form-label-group">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required /> 
+                            <label for="inputPassword">Password</label>
                         </div>
+
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                            <label class="custom-control-label" for="customCheck1">Remember password</label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                        <hr class="my-4" />
+                        <button class="btn btn-lg btn-danger btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+                        <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+                        </form>
                     </div>
+                    </div>
+                </div>
                 </div>
             </div>
         );

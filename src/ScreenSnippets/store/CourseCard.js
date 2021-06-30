@@ -6,7 +6,7 @@ import product from "../../../public/images/Products/shoes.jpg";
 
 
 
-class StoreCard extends Component {
+class CourseCard extends Component {
 
 
     render() {
@@ -41,4 +41,4 @@ class StoreCard extends Component {
     }
 }
 
-    export default StoreCard;
+    export default CourseCard;

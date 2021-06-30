@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
-import app4 from "../../../public/images/Home/app4.png";
-import app5 from "../../../public/images/Home/app5.png";
+import app4 from "../../../public/images/Home/home-courses-1.png";
+import app5 from "../../../public/images/Home/home-courses-2.png";
 
 
 class Offers extends Component {

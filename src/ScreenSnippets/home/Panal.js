@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import money from "../../../public/images/Home/online-courses.jpg";
+import money from "../../../public/images/Home/online-courses-1.jpg";
 
 class Panal extends Component {
     render() {
@@ -7,9 +7,9 @@ class Panal extends Component {
             <div className="panal">
                 <div className="container">
                     <image className="" src={money} alt="" />
-                    <h2>{this.props.head}</h2>
-                    <p>{this.props.p}</p>
-                    <a className="btn btn-dark" href={this.props.href}>{this.props.a}</a>
+                    <h2 className="text-dark">We Can Make Youe Rich</h2>
+                    <p className="text-dark">you can use your moeny to busniss it in useful work</p>
+                    <a className="btn btn-dark" href="/store">Store</a>
                 </div>
             </div>
         )

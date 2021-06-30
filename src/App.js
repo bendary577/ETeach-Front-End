@@ -17,7 +17,7 @@ import MyInvoices from './Screens/MyInvoices';
 import MakeInvoice from './Screens/MakeInvoice';
 import ViewItemDetails from './Screens/ViewItemDetails';
 import SellerProfile from './Screens/SellerProfile';
-import Stores from './Screens/Stores';
+import CoursesLibrary from './Screens/CoursesLibrary';
 import SellerStore from './Screens/SellerStore';
 import SigninPage from './Screens/SigninPage';
 import AdminDashBoard from './Screens/AdminDashBoard';
@@ -113,8 +113,8 @@ class App extends Component {
                         <SellerProfile />
                     </Route>
 
-                    <Route exact path="/stores">
-                        <Stores />
+                    <Route exact path="/courses_library">
+                        <CoursesLibrary />
                     </Route>
 
                     <Route exact path="/mystore">

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import StoreCard from "../ScreenSnippets/store/StoreCard";
+import StoreCard from "../ScreenSnippets/store/CourseCard";
 
 
-class StoreCarousel extends Component {
+class CoursesCarousel extends Component {
 
     render() {
         return (
@@ -86,4 +86,4 @@ class StoreCarousel extends Component {
     }
 }
 
-export default StoreCarousel;
+export default CoursesCarousel;

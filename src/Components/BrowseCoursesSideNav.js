@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import "../../public/css/accsidenavbar.css";
 
-class BrowseStoreSideNav extends Component {
+class BrowseCoursesSideNav extends Component {
 
     state = {
         rating: '',
@@ -207,4 +207,4 @@ class BrowseStoreSideNav extends Component {
     }
 }
 
-export default BrowseStoreSideNav;
+export default BrowseCoursesSideNav;

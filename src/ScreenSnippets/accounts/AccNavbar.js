@@ -4,7 +4,7 @@ import "../../../public/css/accnavbar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import Pusher from 'pusher-js';
-import logo from '../../../public/images/Home/myeasy-logo.png'
+import logo from '../../../public/images/Home/logo.png'
 
 class CustomerAccNavBar extends Component {
 
@@ -47,149 +47,38 @@ class CustomerAccNavBar extends Component {
     };
 
     const logoStyle = {
-      width: 90,
-      height: 90,
+      width: 80,
+      height: 80,
       marginTop : 5
     };
 
     return (
-      <nav className="topnavigation navbar navbar-expand-sm bg-dark navbar-dark">
-        {/*------------------------- brand logo ----------------------------------------------*/}
-
-        <a className="navbar-brand" href="/">
-          <img src={logo} alt="Logo"  style={logoStyle}/>
-        </a>
-        
-        {/*------------------------- search bar ---------------------------------------------*/}
-
-        <div class="input-group w-50">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="search"
-            aria-describedby="sizing-addon2"
-          />
-        </div>
-
-        {/*------------------------- collapsing button ---------------------------------------*/}
-
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        {/*------------------------- nav links ----------------------------------------------*/}
-
-        <div
-          className="ml-5 collapse navbar-collapse accLinks"
-          id="collapsibleNavbar"
-        >
-          <ul className="navbar-nav">
-            <li className="nav-item mx-1 mt-2">
-              <a className="nav-link" href="/stores">
-                stores
-              </a>
-            </li>
-            <li className="nav-item mx-1 mt-2">
-              <a className="nav-link" href="/mycart">
-                cart
-              </a>
-            </li>
-            <li className="nav-item mx-1 mt-2">
-              <a className="nav-link" href="/myorders">
-                orders
-              </a>
-            </li>
-
-            <li className="nav-item mx-1 mt-2">
-              <a href="">
-                <img
-                  src={egypt}
-                  style={langIconStyle}
-                  className="mt-2"
-                  alt=""
-                />
-              </a>
-            </li>
-
-            {/*------------------------- notifications drop down links ----------------------------------------------*/}
-
-            <li class="nav-item dropdown mr-0 ml-5">
-              <a
-                class="nav-link "
-                href="/profile"
-                id="notificationsDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img
-                  src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg"
-                  width="40"
-                  height="40"
-                  alt="logo"
-                  className="rounded-circle"
-                  onClick={this.clearNotifications}
-                />{ this.state.notifications_number > 0 ? <span class="badge badge-pill badge-danger align-top">{this.state.notifications_number}</span> : "" } 
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="notificationsDropdownMenuLink"
-              >
-                <h5 className="font-weight-bold p-2">Notifications</h5>
-                {this.state.new_notification_message === "" ? "" : <h6 className="p-2">you have no notifications yet</h6>}
-              </div>
-            </li>
-
-            {/*------------------------- options drop down links ----------------------------------------------*/}
-            <li class="nav-item dropdown mr-0">
-              <a
-                className="nav-link"
-                href="/customerprofile"
-                id="optionsDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                  <FontAwesomeIcon icon={faCaretDown} className="mt-3"></FontAwesomeIcon>
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="optionsDropdownMenuLink"
-              >
-                 <a className="dropdown-item" href="profile">
-                  Profile
-                </a>
-
-                <a className="dropdown-item" href="editprofile">
-                  Edit Profile
-                </a>
-                <a className="dropdown-item" href="#">
-                  Privacy Policy
-                </a>
-                <a className="dropdown-item" href="#">
-                  Terms Of Service
-                </a>
-                <a className="dropdown-item" href="#">
-                  Help
-                </a>
-                <a className="dropdown-item" href="#">
-                  Logout
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <nav class=" navbar navbar-expand-lg navbar-light bg-light cyan">
+      <a class="navbar-brand mt-2 mt-lg-0" href="/">
+        <img src={logo} alt="Logo" style={logoStyle}/>
+      </a>
+			<a class="navbar-brand font-bold" href="#">Eteach</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSuapportedContent-4">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"><i class="fa fa-envelope"></i> Contact <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-gear"></i> Settings</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Profile </a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+							<a class="dropdown-item" href="#">My account</a>
+							<a class="dropdown-item" href="#">Log out</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
     );
   }
 }
