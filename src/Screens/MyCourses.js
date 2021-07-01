@@ -7,7 +7,7 @@ import Footer from "../ScreenSnippets/accounts/Footer";
 import CartItemInfoCard from "../Components/Cards/CartItemInfoCard";
 import axios from 'axios';
 
-class MyCart extends Component {
+class MyCourses extends Component {
 
     state = {
         cartproducts: []
@@ -28,7 +28,7 @@ class MyCart extends Component {
 
                 <AccNavbar />
 
-                <div className="container" style={{ height: 500 }}>
+                <div className="container">
 
                     <div className="intro-headline d-flex my-5">
                         <FontAwesomeIcon icon={faShoppingCart} className=" fa-2x mr-2 mt-1"></FontAwesomeIcon>
@@ -44,10 +44,10 @@ class MyCart extends Component {
                                     </div>
                                 )}
                             </div>
-                            : <div className="noOrders my-5 d-flex">
-                                <h1>you have no products added to your cart yet!</h1>
+                            : <div className="noOrders my-5 d-flex" style={{ height: 500 }}>
+                                <h1>you have no courses added yet!</h1>
                                 <div className="mx-5">
-                                    <a href="/stores" className="btn btn-lg btn-success">Buy now !</a>
+                                    <a href="/stores" className="btn btn-lg btn-success">start browsing courses now !</a>
                                 </div>
                             </div>
                         }
@@ -59,4 +59,4 @@ class MyCart extends Component {
     }
 }
 
-export default MyCart;
+export default MyCourses;

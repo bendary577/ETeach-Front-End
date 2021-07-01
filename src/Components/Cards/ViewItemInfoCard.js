@@ -19,6 +19,7 @@ class ViewItemInfoCard extends Component {
                             <div className="card-block px-2">
                                 {/* ------------------------------- item info -------------------------------------------- */}
                                 <div className="itemName clearfix">
+                                    
                                     <div className="float-left">
                                         <h4 className="card-title mt-3">Item Name</h4>
                                         <h5 className="text-success">$129.0</h5>

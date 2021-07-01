@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import StoreCard from "../ScreenSnippets/store/CourseCard";
+import CourseCard from "../ScreenSnippets/course/CourseCard";
 
 
 class CoursesCarousel extends Component {
@@ -7,7 +7,6 @@ class CoursesCarousel extends Component {
     render() {
         return (
             <div className="parent-div">
-
 
                     {/* --------------------------- indicators ------------------------------- */}
                         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -26,23 +25,19 @@ class CoursesCarousel extends Component {
                             <div class="carousel-inner" role="listbox">
 
                             <div class="carousel-item active">
+                                <div class="row" >
+                                    {
+                                    this.props.courses.map(course => 
+                                            <div class="col-md-4" key={course.id}>
+                                                <CourseCard course={course}/> 
+                                            </div>
 
-                                <div class="row">
-                                <div class="col-md-4">
-                                    <StoreCard />
+                                        )
+                                    }
                                 </div>
-
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <StoreCard />
-                                </div>
-
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <StoreCard />
-                                </div>
-                                </div>
-
                             </div>
-
+                            
+                            {/*
                             <div class="carousel-item">
 
                                 <div class="row">
@@ -77,11 +72,12 @@ class CoursesCarousel extends Component {
                                     </div>
                                 </div>
                             </div>
+                            */}
+
                             </div>
                         </div>
 {/* ---------------------------------- end carousel ------------------- */}
                     </div>
-
         );
     }
 }

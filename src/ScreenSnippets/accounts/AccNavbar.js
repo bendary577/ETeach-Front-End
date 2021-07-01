@@ -15,20 +15,6 @@ class CustomerAccNavBar extends Component {
 
   componentDidMount() {
 
-    // Enable pusher logging - don't include this in production
-    Pusher.logToConsole = true;
-      var pusher = new Pusher("aa38bb9a07c03b75f95d", {
-        cluster: "us2",
-        encrypted: true,
-      });
-      
-      var channel = pusher.subscribe("new_order_notification");
-      channel.bind("pusher:subscription_succeeded",  (data) => {
-        alert(JSON.stringify(data));
-        this.setState({
-            new_notification_message : data.message
-        });
-      });
   }
 
   clearNotifications = (e)=> {
@@ -73,7 +59,7 @@ class CustomerAccNavBar extends Component {
 						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Profile </a>
 						<div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
 							<a class="dropdown-item" href="#">My account</a>
-							<a class="dropdown-item" href="#">Log out</a>
+							<a class="dropdown-item" href="/signin">Log out</a>
 						</div>
 					</li>
 				</ul>

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Form, Container, Button, Col, Row } from 'react-bootstrap';
 import axios from 'axios';
+import Footer from '../ScreenSnippets/accounts/Footer';
 import AccNavbar from '../ScreenSnippets/accounts/AccNavbar';
 import Upload from "../../public/icons/stores/uploaditem.png";
 
-class UploadItem extends Component {
+class UploadCourse extends Component {
 
     constructor(props) {
         super(props);
@@ -69,7 +70,7 @@ class UploadItem extends Component {
                         <div className="header">
                             <h1 className="text-center" style={{
                                 color: '#556a87', fontSize: '30px', fontWeight: 'bold', marginBottom: '25px'
-                            }}>Upload Your Item Now!</h1>
+                            }}>Upload a new course now!</h1>
                         </div>
 
                     <Row>
@@ -139,9 +140,10 @@ class UploadItem extends Component {
                     </Row>
                 </Container>
             </div>
+            <Footer />
         </div>
         )
     }
 }
 
-export default UploadItem;
+export default UploadCourse;

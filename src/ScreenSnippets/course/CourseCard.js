@@ -3,11 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
 import "../../../public/css/itemcartcard.css";
 import product from "../../../public/images/Products/shoes.jpg";
-
+import {Link } from 'react-router-dom';
 
 
 class CourseCard extends Component {
-
 
     render() {
         return (
@@ -15,7 +14,7 @@ class CourseCard extends Component {
                 <img src={product} calssName="card-img img-responsive" />
                 <div className="card-body">
                     <div className="clearfix">
-                        <h6 className="float-left">Store Name</h6>
+                        <h6 className="float-left">{this.props.course.name}</h6>
                         <div className="float-right">
                             <FontAwesomeIcon icon={faStar} className="checked"></FontAwesomeIcon>
                             <FontAwesomeIcon icon={faStar} className="checked"></FontAwesomeIcon>
@@ -25,14 +24,30 @@ class CourseCard extends Component {
                         </div>
                     </div>
 
-                    <div class="store_details">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="course_details">
+                        <p>{this.props.course.description}</p>
                     </div>
 
                     <div className="my-2">
-                        <a className="btn btn-success btn-block" href="/view_store" role="button">
-                            Visit Store
-                        </a>
+                       {/*
+                        <Link
+                            className="btn btn-success btn-block"
+                            to={{
+                                pathname: "/view_course",
+                                state: {
+                                    course_id : this.props.course.id
+                                }
+                            }}>
+                            See Course Details 
+                        </Link>
+                        */}
+                        {/*
+                        <Link
+                            className="btn btn-success btn-block"
+                            to={`/view_course/${this.props.course.id}`}>
+                            See Course Details 
+                        </Link>
+                        */}
                     </div>
 
                 </div>
